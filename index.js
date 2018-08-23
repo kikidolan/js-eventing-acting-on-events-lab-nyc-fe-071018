@@ -1,5 +1,7 @@
 const element = document.getElementById('dodger')
 
 document.addEventListener('keydown', (event) => {
-  event.which
+ if (event.which === 37) {
+   console.log(event)
+ }
 })
