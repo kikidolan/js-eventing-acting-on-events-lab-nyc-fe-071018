@@ -1,3 +1,3 @@
-const element = document.querySelector(#dodger)
+const element = document.getElementById('dodger')
 
 document.addEventListener()
