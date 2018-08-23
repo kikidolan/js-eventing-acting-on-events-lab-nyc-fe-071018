@@ -5,6 +5,7 @@ document.addEventListener('keydown', (event) => {
  if (event.which === 37) {
     let previousLeft = element.style.left
     let previousLeftNumber = parseInt(previousLeft.replace('px', ""), 10)
-    let newLeftNumer = previousLeftNumber -1
+    let newLeftNumer = (previousLeftNumber -1) + "px"
+    element.style.left = newLeftNumber
  }
 })
