@@ -17,7 +17,7 @@ function moveDodgerRight() {
       let previousRight = element.style.left
       let previousRightNumber=parseInt(previousRight.replace('px', ''), 10)
       if (previousRightNumber < 400 ) {
-        let newRightNumber = (previousRightNumer +1) + "px"
+        let newRightNumber = (previousRightNumber +1) + "px"
         element.style.right = newRightNumber
       }
   }
