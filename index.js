@@ -11,13 +11,15 @@ document.addEventListener('keydown', (event) => {
  }
 })
 
-function moveDodgerRight(event) {
-  if (event.which === 39) {
-    let previousRight = element.style.left
-    let previousRightNumber=parseInt(previousRight.replace('px', ''),10)
-    if (previousRightNumber < 400 ) {
-      let newRightNumber = (previousRightNumer +1) + "px"
-      element.style.right = newRightNumber
-    }
+function moveDodgerRight() {
+  document.addEventListener('keydown', (event) => {
+    if (event.which === 39) {
+      let previousRight = element.style.left
+      let previousRightNumber=parseInt(previousRight.replace('px', ''),10)
+      if (previousRightNumber < 400 ) {
+        let newRightNumber = (previousRightNumer +1) + "px"
+        element.style.right = newRightNumber
+      }
   }
+})
 }
