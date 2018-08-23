@@ -1,3 +1,5 @@
 const element = document.getElementById('dodger')
 
-document.addEventListener()
+document.addEventListener('keydown', (event) => {
+  event.which
+})
